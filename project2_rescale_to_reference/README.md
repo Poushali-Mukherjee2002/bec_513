@@ -38,11 +38,11 @@ Process the compressed query BED file through the Python script using the struct
 
 ```bash
 zcat ./data/query.bed.gz | python3 ./scripts/project_2_code.py ./data/query.bed.gz ./data/reference.hist > ./rescaled_output.bed
-
+```
 ### Step 2: Generate the Comparison Plot
 Run the Gnuplot script from the scripts directory to compile and save the final distribution plot, providing the reference.hist file path and the file path of rescaled.hist (obtained from running the python scripts) as the first and second argument respectively :
 ```bash
 gnuplot -c ./scripts/project_2_plot.gnu ./data/reference.hist ./outputs/rescaled.hist
-
+```
 
 ## You may find your output plot in './fragment_length_distribution_rescaled_data.png'

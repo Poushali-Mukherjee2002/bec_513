@@ -38,13 +38,14 @@ Pipe your compressed BED dataset through the Python script using the structured 
 
 ```bash
 zcat ./data/mapped.bed.gz | python3 ./scripts/project3_plot.py > ./real_data_vplot.tsv
+```
 
 ### Step 2: Render the V-plot Heatmap
 Execute the Gnuplot script from your scripts directory to compile save the final image:
 ```bash
 gnuplot -c ./scripts/vplot.gnu ./real_data_vplot.tsv
+```
 
-
-## Find the generated vplot in './vplot1.png'
+Find the generated vplot in './vplot1.png'
 
 
