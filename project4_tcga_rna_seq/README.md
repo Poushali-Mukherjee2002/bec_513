@@ -12,7 +12,7 @@ This project processes TCGA RNA-seq datasets for Lung Adenocarcinoma (LUAD) to q
 
 ## Repository Structure
 - **`scripts/`:** 
-  - `code_NKX21.sh` — Shell script to parse expression values (`tpm_unstranded`) for NKX2-1 across sample files.
+  - `code_NKX214.sh` — Shell script to parse expression values (`tpm_unstranded`) for NKX2-1 across sample files.
   - `boxplot.R` — R script utilizing `tidyverse` / `ggplot2` to render the comparative $\log_2(\text{TPM} + 1)$ boxplot.
 - **`outputs/`:** Stores previously generated expression tables (`PT.tsv`, `STN.tsv`) and visual plots inside `outputs/plots/` as examples.
 
