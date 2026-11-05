@@ -33,30 +33,32 @@ Ensure you have the following installed in your Linux/Unix environment:
 - **R** (version 4.0 or higher)
 - **R Packages**: `tidyverse` (`ggplot2`, `dplyr`, `readr`)
 
-```R
+``` r
 install.packages("tidyverse")
-
+```
 ---
-
 
 ## How to Run the Pipeline
 Follow these steps in your terminal from the project root directory:
 
 ### Step 1: Extract the Raw Data
 Unpack the TCGA data archive into your** present working directory** to populate the raw count directories:
-```bash
+```bash 
 tar -zxvf ./tcga_data.tar.gz -C ./
+```
 
 ### Step 2: Run the Data Processing Shell Script
 Execute the shell script to parse the gene expression profiles and extract tpm_unstranded values for NKX2-1, while providing the filepath of the samplesheet .tsv file as argument as shown:
-## NOTE: Kindly make sure your data is in the **present working directory** before running the code
+
+## **NOTE** : Kindly make sure your data is in the **present working directory** before running the code
 
 ```bash
 bash scripts/code_NKX21.sh ./data/gdc_sample_sheet.tsv
-
+```
 ### Step 3: Generate the Boxplot Visualization
 Run the R script to process the extracted tables and render the comparative expression boxplot:
 
 ```bash
 Rscript ./scripts/boxplot.R
 
+```
